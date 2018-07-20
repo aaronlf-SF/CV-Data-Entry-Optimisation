@@ -1,11 +1,26 @@
 import re
+
 import colorama
 colorama.init()
 
 from skills import skills
 
 
+
 #======================================================================
+
+
+
+def main():
+	text = input('Paste text below:\n\n')
+	print('\n\n--------------------------------------------------------------------------------')
+	process_text_and_print_results(text)
+	print('\n\n\n\n\n')
+
+
+	
+#======================================================================
+
 
 
 def find_word_in_string(text,keyword):
@@ -17,8 +32,6 @@ def find_word_in_string(text,keyword):
 	for m in re.finditer(keyword, text.casefold()):
          occurrences.append([m.start(),m.end()])
 	return occurrences
-	
-	
 	
 	
 def print_with_highlights(text,indices):#sentence_dict):
@@ -36,9 +49,7 @@ def print_with_highlights(text,indices):#sentence_dict):
 		if array == indices[-1]: # last highlighted word
 			print(text[normalTextStart:])
 		
-		
-		
-			
+					
 def sentence_finder(text,indices):
 
 	beginIndex = indices[0]
@@ -64,19 +75,12 @@ def sentence_finder(text,indices):
 			endIndex += 1
 			
 	sentence = text[beginIndex:endIndex]
-	#new_indices = find_word_in_string(sentence_text,keyword)
 	
-	return sentence #{'text': sentence_text, 'indices': new_indices} #SHOULD THIS RETURN KEYWORD INSTEAD OF INDICES? ...OR NONE AT ALL??
+	return sentence
 	
 
+	
 #======================================================================
-
-
-text = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text \
-ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only \
-five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the \
-release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
-
 
 
 def display_sentences_for_skill(text,skill,name_of_skill,toPrintBroadSkill): #skill variable is simply a list of the keywords 
@@ -97,6 +101,7 @@ def display_sentences_for_skill(text,skill,name_of_skill,toPrintBroadSkill): #sk
 		if toPrintBroadSkill[0] == True:
 			print('\n\n\n\x1b[1;33;40m' + '~~~ '+ toPrintBroadSkill[1] + ' ~~~' + '\x1b[0m')
 		print('\n\x1b[1;32;40m' + name_of_skill.upper() + ' - NUMBER OF OCCURRENCES: ' + str(skill_occurrence_count) + '\x1b[0m') #GREEN OUTPUT
+	
 	for sentence in sentences:
 	
 		highlight_indices = []	
@@ -107,9 +112,6 @@ def display_sentences_for_skill(text,skill,name_of_skill,toPrintBroadSkill): #sk
 		print_with_highlights(sentence,highlight_indices)
 	return skill_occurrence_count
 	
-	
-
-
 
 def process_text_and_print_results(text):
 	listToPrint = []
@@ -148,13 +150,15 @@ def process_text_and_print_results(text):
 	if len(listToPrint) == 0:
 		print('\x1b[1;31;40m' + "No relevant keywords found!" + '\x1b[0m') #RED OUTPUT
 		
-		
-def main():
-	text = input('Paste text below:\n\n')
-	print('\n\n--------------------------------------------------------------------------------')
-	process_text_and_print_results(text)
-	print('\n\n\n\n\n')
 
-	
+		
+#======================================================================
+
+
+
 if __name__ == '__main__':
 	main()
+
+	
+	
+#======================================================================
