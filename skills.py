@@ -21,8 +21,6 @@ skills = {
 								},
 			'Consultant':{
 								'broadKeyWords':[
-												'consultant',
-												'consulting'
 												],
 								'specificSkills':{
 																	'Microsoft Dynamic Consultant':[
@@ -64,10 +62,6 @@ skills = {
 								},
 			'Data':{
 								'broadKeyWords':[
-												'data',
-												'business intelligence',
-												' bi ', 
-												'analysis'
 												],
 								'specificSkills':{
 																	'Analytics Manager':[
@@ -130,7 +124,7 @@ skills = {
 																						'data base manager'
 																						],
 																	'DBA':[				
-																						'dba',
+																						' dba ',
 																						'database admin',
 																						'data base admin'
 																						],
@@ -143,25 +137,23 @@ skills = {
 																						'my sql'
 																						],
 																	'Oracle DBA':[
-																						'oracle'
+																						' oracle '
 																						],
 																	'SQL DBA':[
-																						'sql'
+																						' sql '
 																						],
 																	'SQL Developer':[
-																						'sql'
+																						' sql '
 																					]
 												}
 								},
 			'Software Engineering':{
 								'broadKeyWords':[
-												'software',
-												'developer',
-												'architect'
 												],
 								'specificSkills':{
 																	'.Net Developer':[
-																						'.net'
+																						' .net',
+																						'asp.net'
 																						],
 																	'BigData':[			
 																						'big data',
@@ -181,7 +173,8 @@ skills = {
 																	'C++ Developer':[	
 																						'c dev',
 																						'in c ',
-																						'c++'
+																						'using c '
+																						'c\\+\\+'
 																						],
 																	'Dev Manager':[		
 																						'dev manager',
@@ -198,7 +191,7 @@ skills = {
 																						'director of software engineering'
 																						],
 																	'Java Developer':[
-																						'java',
+																						'java ',
 																						'jdk'
 																						],
 																	'Mobile Developer':[
@@ -207,7 +200,7 @@ skills = {
 																						'android dev',
 																						'android app',
 																						'ios dev',
-																						'ios app''
+																						'ios app'
 																						],
 																	'Python Developer':[
 																						'python',
@@ -242,7 +235,6 @@ skills = {
 			'Manager':{
 								'broadKeyWords':[
 												'manager',
-												'management',
 												'director'
 												],
 								'specificSkills':{
@@ -370,7 +362,7 @@ skills = {
 			'System Engineering':{
 								'broadKeyWords':[
 												'security',
-												'system'
+												'system engineer'
 												],
 								'specificSkills':{
 																	'Security Engineer':[
@@ -441,7 +433,6 @@ skills = {
 								},
 			'Network':{
 								'broadKeyWords':[
-												'network'
 												],
 								'specificSkills':{
 																	'Network Architect':[
@@ -478,16 +469,17 @@ skills = {
 								'broadKeyWords':[
 												'qa',
 												'quality assurance',
-												'testing',
 												'tester'
 												],
 								'specificSkills':{
 																	'Automation Tester':[
-																						'automation tester' # this will catch automation tester, testing, tests
+																						'automation test' # this will catch automation tester, testing, tests
 																						],
 																	'Localization QA Engineer':[
-																						'localization',
-																						'localisation'
+																						'qa localization',
+																						'qa localisation',
+																						'localization qa',
+																						'localisation qa'
 																						],
 																	'Manual Tester':[
 																						'manual test',
@@ -513,7 +505,6 @@ skills = {
 								},
 			'Web':{
 								'broadKeyWords':[
-												'web'
 												],
 								'specificSkills':{
 																	'3D':[
@@ -530,8 +521,7 @@ skills = {
 																						'css'
 																						],
 																	'FrontEnd Developer':[
-																						'frontend',
-																						'restful'
+																						'frontend'
 																						],
 																	'Graphic Designer':[
 																						'graphic design'
@@ -539,7 +529,7 @@ skills = {
 																	'Javascript Developer':[
 																						'javascript',
 																						'java script',
-																						'js',
+																						' js ',
 																						'angularjs',
 																						'node.js'
 																						],
@@ -587,7 +577,6 @@ skills = {
 								},
 			'Support':{
 								'broadKeyWords':[
-												'support'
 												],
 								'specificSkills':{
 																	'Application Support Engineer':[
@@ -632,7 +621,6 @@ skills = {
 								},
 			'Project Manager':{
 								'broadKeyWords':[
-												'project manager'
 												],
 								'specificSkills':{
 																	'Change Manager':[
@@ -666,7 +654,7 @@ skills = {
 																						'sap project manager'
 																						],
 																	'Scrum Master':[
-																						'scrum'
+																						'scrum master'
 																					]
 												}
 								},
@@ -675,42 +663,39 @@ skills = {
 												],
 								'specificSkills':{
 																	'Customer Service':[
-																						'retail',
 																						'customer service',
-																						'shop',
-																						'sales',
+																						'sales assistant',
+																						'shop assistant'
 																						'call center',
-																						'deli',
 																						'barista'
 																						],
 																	'Office Manager':[
 																						'office manager'
 																						],
 																	'Gaming CS':[
-																						'customer service'
+																						'gaming customer service'
 																						],
 																	'Gaming Finance':[
-																						'finance'
+																						'gaming finance'
 																						],
 																	'Gaming HR':[
-																						'hr',
-																						'human resources'
+																						'gaming hr',
+																						'gaming human resources'
 																						],
 																	'Gaming Marketing':[
-																						'marketing',
-																						'marketer'
+																						'gaming marketing',
+																						'gaming marketer'
 																						],
 																	'Gaming Misc':[	
-																						'gaming'
 																						],
 																	'Gaming Operations':[
-																						'operations'
+																						'gaming operations'
 																						],
 																	'Gaming Payments':[
-																						'payments'
+																						'gaming payments'
 																						],
 																	'Gaming Security & Integrity':[
-																						'security and integrity'
+																						'gaming security and integrity'
 																						],
 																	'Gaming Tester':[
 																						'games tester',
@@ -719,10 +704,10 @@ skills = {
 																	'Graduate':[		'graduate',
 																						'graduated',
 																						'degree',
-																						'phd'
+																						' phd '
 																						],
 																	'HR':[
-																						'hr',
+																						' hr ',
 																						'human resources',
 																						'payroll',
 																						'hiring'
@@ -731,7 +716,7 @@ skills = {
 																						'incident manager'
 																						],
 																	'IT Sales':[
-																						'it sales'
+																						' it sales'
 																						],
 																	'Marketing Director':[
 																						'marketing director',
@@ -780,7 +765,7 @@ skills = {
 												],
 								'specificSkills':{
 																	'CICS':[
-																						'cics',
+																						' cics ',
 																						'z/os',
 																						'z/vse',
 																						'Customer Information Control System'
@@ -791,7 +776,7 @@ skills = {
 																						'common business oriented language'
 																						],
 																	'DB2':[	
-																						'db2'
+																						' db2 '
 																						],
 																	'iSeries':[
 																						'iseries',
@@ -806,16 +791,14 @@ skills = {
 								},
 			'Mobile':{
 								'broadKeyWords':[
-												'mobile',
-												'smartphone'
 												],
 								'specificSkills':{
 																	'Android Developer':[
 																						'android'
 																						],
 																	'iOS Developer':[
-																						'ios',
-																						'swift'
+																						' ios ',
+																						' swift '
 																						],
 																	'Mobile Architect':[
 																						'mobile architect',
@@ -833,7 +816,7 @@ skills = {
 												],
 								'specificSkills':{
 																	'CFO':[	
-																						'cfo',
+																						' cfo ',
 																						'chief financial officer',
 																						'chief finance officer'
 																						],
@@ -842,8 +825,7 @@ skills = {
 																						'director of finance'
 																						],
 																	'Fund Accountant':[
-																						'accountant',
-																						'fund'
+																						'accountant'
 																						],
 																	'Finance Manager':[
 																						'finance manager',
@@ -856,11 +838,6 @@ skills = {
 								},
 			'Multilingual':{
 								'broadKeyWords':[
-												'bilingual',
-												'native',
-												'multilingual',
-												'fluency',
-												'fluent'
 												],
 								'specificSkills':{
 																	'Multilingual Customer Support':[
@@ -947,7 +924,7 @@ skills = {
 																						'taiwanese'
 																						],
 																	'Thai':[
-																						'thai'
+																						'thai '
 																					]
 												}
 								},
@@ -985,8 +962,8 @@ skills = {
 								},
 			'SAP / ERP':{
 								'broadKeyWords':[
-												'sap',
-												'erp',
+												' sap ',
+												' erp ',
 												'enterprise resource plan'
 												],
 								'specificSkills':{
@@ -1009,7 +986,7 @@ skills = {
 																						'sap financial'
 																						],
 																	'ABAP Developer':[
-																						'abap'
+																						' abap '
 																						],
 																	'Oracle Consultant':[
 																						'oracle consultant'
@@ -1050,7 +1027,7 @@ skills = {
 																						'sap basis'
 																						],
 																	'ABAP/4 Programming':[
-																						'abap',
+																						' abap ',
 																						'4 programming',
 																						'sap 4'
 																						],
@@ -1114,7 +1091,7 @@ skills = {
 																						'pp for process industries'
 																						],
 																	'PP - Processes':[
-																						'pp',
+																						' pp ',
 																						'pp process'
 																						],
 																	'SAP QM (Quality Management)':[

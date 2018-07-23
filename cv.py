@@ -15,7 +15,7 @@ def main():
 	text = get_user_input()
 	print('\n\n--------------------------------------------------------------------------------')
 	process_text_and_print_results(text)
-	print('\n\n\n\n\n')
+	print('\n\n')
 
 
 
