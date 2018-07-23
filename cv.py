@@ -12,17 +12,30 @@ from skills import skills
 
 
 def main():
-	text = input('Paste text below:\n\n')
+	text = get_user_input()
 	print('\n\n--------------------------------------------------------------------------------')
 	process_text_and_print_results(text)
 	print('\n\n\n\n\n')
 
 
-	
+
 #======================================================================
 
 
 
+def get_user_input():
+	input1 = input('Paste text below:\n\n')
+	inputs = [input1]
+	while True:
+		try:
+			input1 = input()
+			inputs.append(input1)
+		except EOFError:
+			break
+	text = '\n'.join(inputs)
+	return text
+	
+		
 def find_word_in_string(text,keyword):
 	'''
 	Given a keyword, this fucntion returns the starting 
@@ -121,7 +134,6 @@ def process_text_and_print_results(text):
 		# broad skill keywords
 		broad_occurrence_count = display_sentences_for_skill(text,skills[broadSkill]['broadKeyWords'],broadSkill,toPrintBroadSkill)
 		if broad_occurrence_count > 0: #If there are keywords in specific skills but not necessarily any broad keywords
-			broad_occurrence_count = display_sentences_for_skill(text,skills[broadSkill]['broadKeyWords'],broadSkill)
 			listToPrint.append({'skill_name':broadSkill,'occurrences':broad_occurrence_count,'broad':True})
 			toPrintBroadSkill[0] = False
 		
