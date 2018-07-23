@@ -1,7 +1,10 @@
 import re
+import shutil 
 
 import colorama
 colorama.init()
+
+import textwrap
 
 from skills import skills
 
@@ -54,14 +57,13 @@ def print_with_highlights(text,indices):#sentence_dict):
 	#text = sentence_dict['text']
 	#indices = sentence_dict['indices']
 	normalTextStart = 0
-	
+	text = '\n' + ' - ' + textwrap.fill(text)
 	for array in indices:	
-		print(text[normalTextStart:array[0]],end='') #printing normal text
-		print('\x1b[1;36;40m' + text[array[0]:array[1]] + '\x1b[0m',end='') #printing highlighted text
-		normalTextStart = array[1]
+		print(text[normalTextStart:array[0]+4],end='') #printing normal text
+		print('\x1b[1;36;40m' + text[array[0]+4:array[1]+4] + '\x1b[0m',end='') #printing highlighted text
+		normalTextStart = array[1]+4
 		if array == indices[-1]: # last highlighted word
 			print(text[normalTextStart:])
-		
 					
 def sentence_finder(text,indices):
 
@@ -112,8 +114,8 @@ def display_sentences_for_skill(text,skill,name_of_skill,toPrintBroadSkill): #sk
 				
 	if skill_occurrence_count > 0:
 		if toPrintBroadSkill[0] == True:
-			print('\n\n\n\x1b[1;33;40m' + '~~~ '+ toPrintBroadSkill[1] + ' ~~~' + '\x1b[0m')
-		print('\n\x1b[1;32;40m' + name_of_skill.upper() + ' - NUMBER OF OCCURRENCES: ' + str(skill_occurrence_count) + '\x1b[0m') #GREEN OUTPUT
+			print('\n\n\n\n\x1b[1;33;40m' + ('~~~ '+ toPrintBroadSkill[1] + ' ~~~').center(80) + '\x1b[0m')
+		print('\n\n\x1b[1;32;40m' + ' ' + name_of_skill.upper() + ' - NUMBER OF OCCURRENCES: ' + str(skill_occurrence_count) + '\x1b[0m' ) #GREEN OUTPUT
 	
 	for sentence in sentences:
 	
@@ -154,7 +156,7 @@ def process_text_and_print_results(text):
 	
 	for item in listToPrint:
 		if item['broad'] == True:
-			firstChar = '\n '
+			firstChar = '\n  '
 		else:
 			firstChar = '    '
 		print('\x1b[1;37;40m' + firstChar + item['skill_name'] + ' (' + str(item['occurrences']) + ')' + '\x1b[0m') #BRIGHT WHITE OUTPUT

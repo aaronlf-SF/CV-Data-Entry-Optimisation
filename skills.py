@@ -552,11 +552,13 @@ skills = {
 																						],
 																	'Web Designer':[
 																						'web design',
-																						'designing website'
+																						'designing website',
+																						'website design'
+																						
 																						],
 																	'Web Developer':[
 																						'web dev',
-																						'webdev',
+																						' webdev',
 																						'website dev',
 																						'web architect',
 																						'website architect',
