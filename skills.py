@@ -152,7 +152,7 @@ skills = {
 												],
 								'specificSkills':{
 																	'.Net Developer':[
-																						' .net',
+																						' \\.net',
 																						'asp.net'
 																						],
 																	'BigData':[			
@@ -389,6 +389,11 @@ skills = {
 																						'linux system admin',
 																						'linux systems admin',
 																						'linux system administrator',
+																						'linux admin',
+																						'unix admin',
+																						'gnu admin',
+																						'linux and windows admin',
+																						'unix and windows admin'
 																						'gnu sys admin',
 																						'gnu system admin',
 																						'gnu systems admin',
@@ -427,7 +432,10 @@ skills = {
 																						'windows 7 sys admin',
 																						'windows 8 sys admin',
 																						'windows system admin',
-																						'windows system administrator'
+																						'windows system administrator',
+																						'windows admin',
+																						'windows and linux admin',
+																						'windows and unix admin'
 																					]
 												}
 								},
@@ -546,7 +554,7 @@ skills = {
 																						'ruby on rails'
 																						],
 																	'UI Developer':[
-																						' ui ',
+																						'ui ',
 																						'user interface',
 																						'gui '
 																						],
@@ -597,12 +605,14 @@ skills = {
 																						'support manager'
 																						],
 																	'Technical Support Engineer':[
+																						'it support',
 																						'technical support engineer',
 																						'tech support engineer',
 																						'technical support',
 																						'tech support'
 																						],
 																	'Technical Support Manager':[
+																						'it support',
 																						'technical support manager',
 																						'tech support manager',
 																						'technical support',
@@ -1235,3 +1245,4 @@ skills = {
 												}
 								}
 		}
+		

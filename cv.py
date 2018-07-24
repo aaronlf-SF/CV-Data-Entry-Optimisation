@@ -1,5 +1,4 @@
 import re
-import shutil 
 
 import colorama
 colorama.init()
@@ -9,6 +8,21 @@ import textwrap
 from skills import skills
 
 
+#======================================================================
+
+'''
+main() defined, line 31
+
+get_user_input() defined, line 43
+
+find_word_in_string() defined, line 61
+sentence_finder() defined, line 72
+print_with_highlights() defined, line 101
+
+display_sentences_for_skill() defined, line 119
+
+process_text_and_print_results() defined, line 154
+'''
 
 #======================================================================
 
@@ -16,7 +30,7 @@ from skills import skills
 
 def main():
 	text = get_user_input()
-	print('\n\n--------------------------------------------------------------------------------')
+	print('\n\n----------------------------------------------------------------------',end='')
 	process_text_and_print_results(text)
 	print('\n\n')
 
@@ -38,10 +52,15 @@ def get_user_input():
 	text = '\n'.join(inputs)
 	return text
 	
-		
+
+	
+#======================================================================
+
+
+	
 def find_word_in_string(text,keyword):
 	'''
-	Given a keyword, this fucntion returns the starting 
+	Given a keyword, this function returns the starting 
 	and ending indices of this keyword within a given text string
 	'''
 	occurrences = []
@@ -49,22 +68,7 @@ def find_word_in_string(text,keyword):
          occurrences.append([m.start(),m.end()])
 	return occurrences
 	
-	
-def print_with_highlights(text,indices):#sentence_dict):
-	'''
-	This prints the sentence with the keyword(s) highlighted cyan.
-	'''
-	#text = sentence_dict['text']
-	#indices = sentence_dict['indices']
-	normalTextStart = 0
-	text = '\n' + ' - ' + textwrap.fill(text)
-	for array in indices:	
-		print(text[normalTextStart:array[0]+4],end='') #printing normal text
-		print('\x1b[1;36;40m' + text[array[0]+4:array[1]+4] + '\x1b[0m',end='') #printing highlighted text
-		normalTextStart = array[1]+4
-		if array == indices[-1]: # last highlighted word
-			print(text[normalTextStart:])
-					
+
 def sentence_finder(text,indices):
 
 	beginIndex = indices[0]
@@ -92,13 +96,38 @@ def sentence_finder(text,indices):
 	sentence = text[beginIndex:endIndex]
 	
 	return sentence
-	
 
+	
+def print_with_highlights(text,indices):
+	'''
+	This prints the sentence with the keyword(s) highlighted cyan.
+	'''
+	wrapper = textwrap.TextWrapper(width=65,initial_indent=' - ',subsequent_indent='   ')
+	wrapped_text = '\n' + wrapper.fill(text) 
+	
+	new_indices = []
+	for arr in indices:
+		word = text[arr[0]:arr[1]].casefold()
+		new_arr = find_word_in_string(wrapped_text,word)
+		for x in new_arr:
+			new_indices.append(x)
+	new_indices = [i for n,i in enumerate(new_indices) if i not in new_indices[:n]]
+	
+	normalTextStart = 0
+	for array in new_indices:	
+		print(wrapped_text[normalTextStart:array[0]],end='') #printing normal text
+		print('\x1b[1;36;40m' + wrapped_text[array[0]:array[1]] + '\x1b[0m',end='') #printing highlighted text
+		normalTextStart = array[1]
+		if array == new_indices[-1]: # last highlighted word
+			print(wrapped_text[normalTextStart:])
+
+					
+	
 	
 #======================================================================
 
 
-def display_sentences_for_skill(text,skill,name_of_skill,toPrintBroadSkill): #skill variable is simply a list of the keywords 
+def display_sentences_for_skill(text,skill,name_of_skill,toPrintBroadSkill,skillType): #skill variable is simply a list of the keywords 
 	
 	sentences = []
 	skill_occurrence_count = 0
@@ -114,8 +143,11 @@ def display_sentences_for_skill(text,skill,name_of_skill,toPrintBroadSkill): #sk
 				
 	if skill_occurrence_count > 0:
 		if toPrintBroadSkill[0] == True:
-			print('\n\n\n\n\x1b[1;33;40m' + ('~~~ '+ toPrintBroadSkill[1] + ' ~~~').center(80) + '\x1b[0m')
-		print('\n\n\x1b[1;32;40m' + ' ' + name_of_skill.upper() + ' - NUMBER OF OCCURRENCES: ' + str(skill_occurrence_count) + '\x1b[0m' ) #GREEN OUTPUT
+			print('\n\n\n\n\n\x1b[1;33;40m' + ('~~~~~~~~~  '+ toPrintBroadSkill[1] + '  ~~~~~~~~~').center(70) + '\x1b[0m') #YELLOW OUTPUT
+		if skillType == 'specific':
+			print('\n\n\x1b[1;32;40m' + ' ' + name_of_skill.upper() + ' - NUMBER OF OCCURRENCES: ' + str(skill_occurrence_count) + '\x1b[0m',end='') #GREEN OUTPUT
+		elif skillType == 'broad':
+			print('\n\n\x1b[1;33;40m' + ' ' + name_of_skill.upper() + ' - NUMBER OF OCCURRENCES: ' + str(skill_occurrence_count) + '\x1b[0m',end='' ) #YELLOW OUTPUT
 	
 	for sentence in sentences:
 	
@@ -128,20 +160,25 @@ def display_sentences_for_skill(text,skill,name_of_skill,toPrintBroadSkill): #sk
 	return skill_occurrence_count
 	
 
+
+#======================================================================
+
+
+
 def process_text_and_print_results(text):
 	listToPrint = []
 	for broadSkill in skills:
 		toPrintBroadSkill = [True,broadSkill]
 		
 		# broad skill keywords
-		broad_occurrence_count = display_sentences_for_skill(text,skills[broadSkill]['broadKeyWords'],broadSkill,toPrintBroadSkill)
+		broad_occurrence_count = display_sentences_for_skill(text,skills[broadSkill]['broadKeyWords'],broadSkill,toPrintBroadSkill,'broad')
 		if broad_occurrence_count > 0: #If there are keywords in specific skills but not necessarily any broad keywords
 			listToPrint.append({'skill_name':broadSkill,'occurrences':broad_occurrence_count,'broad':True})
 			toPrintBroadSkill[0] = False
 		
 		#specific skill keywords
 		for specificSkill in skills[broadSkill]['specificSkills']:
-			specific_occurrence_count = display_sentences_for_skill(text,skills[broadSkill]['specificSkills'][specificSkill],specificSkill,toPrintBroadSkill)
+			specific_occurrence_count = display_sentences_for_skill(text,skills[broadSkill]['specificSkills'][specificSkill],specificSkill,toPrintBroadSkill,'specific')
 			if specific_occurrence_count > 0:
 			
 				if broad_occurrence_count == 0:
@@ -152,7 +189,7 @@ def process_text_and_print_results(text):
 				toPrintBroadSkill[0] = False
 		
 	
-	print('\n\n\n\n--------------------------------------------------------------------------------\n\n' + 'POSSIBLE SKILLS FOUND: \n')
+	print('\n\n\n\n----------------------------------------------------------------------'+'\n\n\n'+'POSSIBLE SKILLS FOUND: \n')
 	
 	for item in listToPrint:
 		if item['broad'] == True:
