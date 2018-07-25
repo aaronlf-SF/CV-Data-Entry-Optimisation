@@ -112,6 +112,7 @@ def print_with_highlights(text,indices):
 		for x in new_arr:
 			new_indices.append(x)
 	new_indices = [i for n,i in enumerate(new_indices) if i not in new_indices[:n]]
+	new_indices.sort(key = lambda x: x[1])
 	
 	normalTextStart = 0
 	for array in new_indices:	
