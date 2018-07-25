@@ -125,6 +125,8 @@ skills = {
 																						],
 																	'DBA':[				
 																						' dba ',
+																						' dba\\,',
+																						' dba\\.',
 																						'database admin',
 																						'data base admin'
 																						],
@@ -137,13 +139,19 @@ skills = {
 																						'my sql'
 																						],
 																	'Oracle DBA':[
-																						' oracle '
+																						' oracle ',
+																						' oracle\\,',
+																						' oracle\\.'
 																						],
 																	'SQL DBA':[
-																						' sql '
+																						' sql ',
+																						' sql\\,',
+																						' sql\\.'
 																						],
 																	'SQL Developer':[
-																						' sql '
+																						' sql ',
+																						' sql\\,',
+																						' sql\\.'
 																					]
 												}
 								},
@@ -153,12 +161,14 @@ skills = {
 								'specificSkills':{
 																	'.Net Developer':[
 																						' \\.net',
-																						'asp.net'
+																						'asp\\.net'
 																						],
 																	'BigData':[			
 																						'big data',
 																						'machine learning',
 																						' ai ',
+																						' ai\\,',
+																						' ai\\.',
 																						'artificial intelligence',
 																						'deep learning',
 																						'nearest neighbour',
@@ -263,6 +273,8 @@ skills = {
 																						],
 																	'CIO':[
 																						' cio ',
+																						' cio\\,',
+																						' cio\\.',
 																						'chief information officer'
 																						],
 																	'Configuration Manager':[
@@ -271,10 +283,14 @@ skills = {
 																						],
 																	'COO':[
 																						' coo ',
+																						' coo\\.',
+																						' coo\\,',
 																						'chief operating officer'
 																						],
 																	'CTO':[
 																						' cto',
+																						' coo\\,',
+																						' coo\\.',
 																						'chief technical officer'
 																						],
 																	'Delivery Manager':[
@@ -366,7 +382,6 @@ skills = {
 								},
 			'System Engineering':{
 								'broadKeyWords':[
-												'security',
 												'system engineer'
 												],
 								'specificSkills':{
@@ -543,6 +558,8 @@ skills = {
 																						'javascript',
 																						'java script',
 																						' js ',
+																						' js\\.',
+																						' js\\,',
 																						'angularjs',
 																						'node.js'
 																						],
@@ -560,8 +577,12 @@ skills = {
 																						],
 																	'UI Developer':[
 																						'ui ',
+																						'ui\\,',
+																						'ui\\.',
 																						'user interface',
-																						'gui '
+																						'gui ',
+																						'gui\\,',
+																						'gui\\.'
 																						],
 																	'Web Designer':[
 																						'web design',
@@ -583,6 +604,8 @@ skills = {
 																						],
 																	'UX Developer':[
 																						' ux ',
+																						' ux\\.',
+																						' ux\\,',
 																						'user experience'
 																						],
 																	'XHTML Developer':[
@@ -724,6 +747,8 @@ skills = {
 																						],
 																	'HR':[
 																						' hr ',
+																						' hr\\.',
+																						' hr\\,',
 																						'human resources',
 																						'payroll',
 																						'hiring'
@@ -776,12 +801,13 @@ skills = {
 								'broadKeyWords':[
 												'mainframe',
 												'main frame',
-												'bulk data processing',
-												'ibm'
+												'bulk data processing'
 												],
 								'specificSkills':{
 																	'CICS':[
 																						' cics ',
+																						' cics\\,',
+																						' cics\\.',
 																						'z/os',
 																						'z/vse',
 																						'Customer Information Control System'
@@ -792,7 +818,7 @@ skills = {
 																						'common business oriented language'
 																						],
 																	'DB2':[	
-																						' db2 '
+																						'db2'
 																						],
 																	'iSeries':[
 																						'iseries',
@@ -814,7 +840,11 @@ skills = {
 																						],
 																	'iOS Developer':[
 																						' ios ',
-																						' swift '
+																						' ios\\.',
+																						' ios\\,',
+																						' swift ',
+																						' swift\\.',
+																						' swift\\,'
 																						],
 																	'Mobile Architect':[
 																						'mobile architect',
@@ -833,6 +863,8 @@ skills = {
 								'specificSkills':{
 																	'CFO':[	
 																						' cfo ',
+																						' cfo\\,',
+																						' cfo\\.',
 																						'chief financial officer',
 																						'chief finance officer'
 																						],
@@ -1003,7 +1035,9 @@ skills = {
 																						'sap financial'
 																						],
 																	'ABAP Developer':[
-																						' abap '
+																						' abap ',
+																						' abap\\,',
+																						' abap\\.'
 																						],
 																	'Oracle Consultant':[
 																						'oracle consultant'
@@ -1045,6 +1079,8 @@ skills = {
 																						],
 																	'ABAP/4 Programming':[
 																						' abap ',
+																						' abap\\,',
+																						' abap\\.',
 																						'4 programming',
 																						'sap 4'
 																						],
@@ -1090,7 +1126,9 @@ skills = {
 																						],
 																	'WM (Warehouse Management)':[
 																						'warehouse manage',
-																						' wm '
+																						' wm ',
+																						' wm\\.',
+																						' wm\\,'
 																						],
 																	'SAP PM (Plant Maintenance)':[
 																						'sap pm',
@@ -1109,6 +1147,8 @@ skills = {
 																						],
 																	'PP - Processes':[
 																						' pp ',
+																						' pp\\,',
+																						' pp\\.',
 																						'pp process'
 																						],
 																	'SAP QM (Quality Management)':[
