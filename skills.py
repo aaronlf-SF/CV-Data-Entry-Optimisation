@@ -184,7 +184,8 @@ skills = {
 																						],
 																	'Development Lead':[
 																						'develop lead',
-																						'head of development'
+																						'head of development',
+																						'technical lead'
 																						],
 																	'Director of Software Engineering':[
 																						'software engineering director',
@@ -192,7 +193,11 @@ skills = {
 																						],
 																	'Java Developer':[
 																						'java ',
-																						'jdk'
+																						'java\\,',
+																						'java\\.',
+																						'jdk',
+																						'j2ee',
+																						'j2se'
 																						],
 																	'Mobile Developer':[
 																						'mobile dev',
@@ -715,7 +720,6 @@ skills = {
 																						],
 																	'Graduate':[		'graduate',
 																						'graduated',
-																						'degree',
 																						' phd '
 																						],
 																	'HR':[
@@ -887,7 +891,8 @@ skills = {
 																						'arabic'
 																						],
 																	'Chinese':[
-																						'chinese'
+																						'chinese',
+																						'mandarin'
 																						],
 																	'Danish':[
 																						'danish'
