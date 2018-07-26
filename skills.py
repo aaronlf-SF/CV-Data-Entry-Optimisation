@@ -65,8 +65,8 @@ skills = {
 												],
 								'specificSkills':{
 																	'Analytics Manager':[
-																						'analytics manager',
-																						'data analysis manager'
+																						'analytics manage',
+																						'data analysis manage'
 																						],
 																	'BI Consultant':[
 																						'bi consultant',
@@ -121,9 +121,9 @@ skills = {
 																						'data base dev'
 																						],
 																	'DB Manager':[
-																						'db manager',
-																						'database manager',
-																						'data base manager'
+																						'db manage',
+																						'database manage',
+																						'data base manage'
 																						],
 																	'DBA':[				
 																						' dba ',
@@ -189,8 +189,8 @@ skills = {
 																						'c++'
 																						],
 																	'Dev Manager':[		
-																						'dev manager',
-																						'development manager'
+																						'dev manage',
+																						'development manage'
 																						],
 																	'Developer - Other':[
 																						],
@@ -241,7 +241,7 @@ skills = {
 																						'solutions architect'
 																						],
 																	'Tech Architect':[
-																						'tech arcitect',
+																						'tech architect',
 																						'software architect'
 																						],
 																	'Websphere Consultant':[
@@ -256,22 +256,22 @@ skills = {
 												],
 								'specificSkills':{
 																	'Account Manager':[
-																						'account manager',
-																						'accounts manager',
+																						'account manage',
+																						'accounts manage',
 																						'managed accounts'
 																						],
 																	'Build Manager':[
-																						'build manager'
+																						'build manage'
 																						],
 																	'Build Release Manager':[
-																						'build release manager',
+																						'build release manage',
 																						'managed build releases'
 																						],
 																	'CEO':[				'ceo',
 																						'chief executive officer'
 																						],
 																	'Change Manager':[
-																						'change manager'
+																						'change manage'
 																						],
 																	'CIO':[
 																						' cio ',
@@ -280,8 +280,8 @@ skills = {
 																						'chief information officer'
 																						],
 																	'Configuration Manager':[
-																						'configuration manager',
-																						'config manager'
+																						'configuration manage',
+																						'config manage'
 																						],
 																	'COO':[
 																						' coo ',
@@ -296,21 +296,21 @@ skills = {
 																						'chief technical officer'
 																						],
 																	'Delivery Manager':[
-																						'delivery manager'
+																						'delivery manage'
 																						],
 																	'Director of IT':[
 																						'it director',
 																						'director of it'
 																						],
 																	'Digital Manager':[
-																						'digital manager'
+																						'digital manage'
 																						],
 																	'Director of Operations':[
 																						'director of operations',
 																						'operations director'
 																						],
 																	'General Manager':[
-																						'general manager',
+																						'general manage',
 																						' gm ' 
 																						],
 																	'HR Manager / Director':[
@@ -321,29 +321,29 @@ skills = {
 																						'managing director'
 																						],
 																	'Marketing Manager':[
-																						'marketing manager',
+																						'marketing manage',
 																						'manager of marketing'
 																						],
 																	'IT Manager':[
 																						'it manager',
 																						'manager of it',
-																						'information technology manager'
+																						'information technology manage'
 																						],
 																	'Operations Manager':[
-																						'operations manager'
+																						'operations manage'
 																						],
 																	'Product Manager':[
-																						'product manager'
+																						'product manage'
 																						],
 																	'Production Support Manager':[
-																						'production support manager'
+																						'production support manage'
 																						],
 																	'Recruitment Manager':[
-																						'recruitment manager',
+																						'recruitment manage',
 																						'manager of recruitment'
 																						],
 																	'Release Manager':[
-																						'release manager'
+																						'release manage'
 																						],
 																	'Sales Director':[
 																						'sales director',
@@ -351,19 +351,19 @@ skills = {
 																						'directed sales'
 																						],
 																	'Sales Manager':[
-																						'sales manager',
+																						'sales manage',
 																						'manager of sales'
 																						],
 																	'Service Delivery Manager':[	
-																						'service delivery manager'
+																						'service delivery manage'
 																						],
 																	'Six Sigma Manager':[
-																						'six sigma manager',
-																						'6 sigma manager'
+																						'six sigma manage',
+																						'6 sigma manage'
 																						],
 																	'Technical Account Manager':[
-																						'technical account manager',
-																						'technical accounts manager'
+																						'technical account manage',
+																						'technical accounts manage'
 																					]
 												}
 								},
@@ -403,7 +403,7 @@ skills = {
 																						'development operations'
 																						],
 																	'Infrastructure Manager':[
-																						'infrastructure manager',
+																						'infrastructure manage',
 																						'manager of infrastructure'
 																						],
 																	'Linux/Unix Sys Admin':[
@@ -414,6 +414,9 @@ skills = {
 																						'linux admin',
 																						'unix admin',
 																						'gnu admin',
+																						'linux network',
+																						'unix network',
+																						'gnu network',
 																						'linux and windows admin',
 																						'unix and windows admin'
 																						'gnu sys admin',
@@ -474,7 +477,7 @@ skills = {
 																						'server engineer'
 																						],
 																	'Network Manager':[
-																						'network manager'
+																						'network manage'
 																						],
 																	'Network Support Engineer':[
 																						'network support'
@@ -485,7 +488,7 @@ skills = {
 																						],
 																	'NOC Manager':[
 																						'network operations center',
-																						'noc manager'
+																						'noc manage'
 																						],
 																	'Security Engineer':[
 																						'network security'
@@ -503,7 +506,8 @@ skills = {
 												],
 								'specificSkills':{
 																	'Automation Tester':[
-																						'automation test' # this will catch automation tester, testing, tests
+																						'automation test', # this will catch automation tester, testing, tests
+																						'test automation'
 																						],
 																	'Localization QA Engineer':[
 																						'qa localization',
@@ -525,8 +529,8 @@ skills = {
 																						'quality assurance engineer'
 																						],
 																	'QA Manager':[
-																						'qa manager',
-																						'quality assurance manager'
+																						'qa manage',
+																						'quality assurance manage'
 																						],
 																	'Test Lead':[
 																						'test lead'
@@ -601,7 +605,7 @@ skills = {
 																						'web app'
 																						],
 																	'Web Development Manager':[
-																						'web development manager',
+																						'web development manage',
 																						'manager of web development'
 																						],
 																	'UX Developer':[
@@ -626,13 +630,13 @@ skills = {
 																						],
 																	'Application Support Manager':[
 																						'application support'
-																						'application support manager'
+																						'application support manage'
 																						],
 																	'Desktop Support Engineer':[
 																						'desktop support'
 																						],
 																	'Support Manager':[
-																						'support manager'
+																						'support manage'
 																						],
 																	'Technical Support Engineer':[
 																						'it support',
@@ -643,8 +647,8 @@ skills = {
 																						],
 																	'Technical Support Manager':[
 																						'it support',
-																						'technical support manager',
-																						'tech support manager',
+																						'technical support manage',
+																						'tech support manage',
 																						'technical support',
 																						'tech support'
 																					]
@@ -657,7 +661,7 @@ skills = {
 												],
 								'specificSkills':{
 																	'Product Manager - Hardware':[
-																						'hardware product manager'
+																						'hardware product manage'
 																					]
 												}
 								},
@@ -669,31 +673,31 @@ skills = {
 																						'change manager'
 																						],
 																	'Infrastructure Project Manager':[
-																						'infrastructure manager',
-																						'infrastructure project manager'
+																						'infrastructure manage',
+																						'infrastructure project manage'
 																						],
 																	'Localisation Project Manager':[
 																						'localization',
 																						'localisation',
-																						'localization project manager',
-																						'localisation project manager'
+																						'localization project manage',
+																						'localisation project manage'
 																						],
 																	'PMO Manager':[
-																						'pmo manager',
+																						'pmo manage',
 																						'pmo',
 																						'project management office'
 																						],
 																	'Product Manager':[
-																						'product manager'
+																						'product manage'
 																						],
 																	'Program Manager':[
-																						'program manager'
+																						'program manage'
 																						],
 																	'Project Manager':[
-																						'project manager'
+																						'project manage'
 																						],
 																	'SAP Project Manager':[
-																						'sap project manager'
+																						'sap project manage'
 																						],
 																	'Scrum Master':[
 																						'scrum master'
@@ -712,7 +716,7 @@ skills = {
 																						'barista'
 																						],
 																	'Office Manager':[
-																						'office manager'
+																						'office manage'
 																						],
 																	'Gaming CS':[
 																						'gaming customer service'
@@ -756,7 +760,7 @@ skills = {
 																						'hiring'
 																						],
 																	'Incident Manager':[
-																						'incident manager'
+																						'incident manage'
 																						],
 																	'IT Sales':[
 																						' it sales'
@@ -766,17 +770,18 @@ skills = {
 																						'director of marketing'
 																						],
 																	'Marketing Manager':[
-																						'marketing manager',
+																						'marketing manage',
 																						'manager of marketing'
 																						],
 																	'Process improvement manager':[
-																						'process improvement manager',
-																						'innovation manager',
+																						'process improvement manage',
+																						'innovation manage',
 																						'manager of innovation',
 																						],
 																	'Recruiter':[
 																						'recruiter',
-																						'recruitment'
+																						'recruitment',
+																						'recruiting'
 																						],
 																	'Techical Writer':[
 																						'technical writer',
@@ -790,10 +795,10 @@ skills = {
 																						'tech trainer'
 																						],
 																	'Training Manager':[
-																						'training manager',
+																						'training manage',
 																						],
 																	'Product Manager':[
-																						'product manager'
+																						'product manage'
 																						],
 																	'Spec Vacancy':[
 																					]
@@ -878,8 +883,8 @@ skills = {
 																						'accountant'
 																						],
 																	'Finance Manager':[
-																						'finance manager',
-																						'financial manager',
+																						'finance manage',
+																						'financial manage',
 																						'manager of finance',
 																						'director of finance',
 																						'finance director'
@@ -1003,11 +1008,11 @@ skills = {
 																						'head of privacy'
 																						],
 																	'Project Manager':[
-																						'gdpr project manager',
-																						'privacy project manager',
-																						'data protection manager',
-																						'privacy manager',
-																						'gdpr manager'
+																						'gdpr project manage',
+																						'privacy project manage',
+																						'data protection manage',
+																						'privacy manage',
+																						'gdpr manage'
 																					]
 												}
 								},
@@ -1111,7 +1116,7 @@ skills = {
 																						],
 																	'SAP IM (Investment Management)':[
 																						'sap im',
-																						'sap investment management'
+																						'sap investment manage'
 																						],
 																	'SAP HR (Human Resource)':[
 																						'sap hr',
@@ -1159,7 +1164,7 @@ skills = {
 																						],
 																	'SAP QM (Quality Management)':[
 																						'sap qm',
-																						'sap quality management'
+																						'sap quality manage'
 																						],
 																	'SAP BW (Business Warehousing)':[
 																						'sap bw',
@@ -1230,7 +1235,7 @@ skills = {
 																						'sap business information'
 																						],
 																	'SAP Solution Manager':[
-																						'sap solution manager'
+																						'sap solution manage'
 																						],
 																	'SAP Enterprise Portal':[
 																						'sap enterprise'
