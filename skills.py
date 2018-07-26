@@ -84,6 +84,8 @@ skills = {
 																						'big data',
 																						'machine learning',
 																						' ai ',
+																						' ai,',
+																						' ai.',
 																						'artificial intelligence',
 																						'deep learning',
 																						'nearest neighbour'
@@ -125,8 +127,8 @@ skills = {
 																						],
 																	'DBA':[				
 																						' dba ',
-																						' dba\\,',
-																						' dba\\.',
+																						' dba,',
+																						' dba.',
 																						'database admin',
 																						'data base admin'
 																						],
@@ -140,18 +142,18 @@ skills = {
 																						],
 																	'Oracle DBA':[
 																						' oracle ',
-																						' oracle\\,',
-																						' oracle\\.'
+																						' oracle,',
+																						' oracle.'
 																						],
 																	'SQL DBA':[
 																						' sql ',
-																						' sql\\,',
-																						' sql\\.'
+																						' sql,',
+																						' sql.'
 																						],
 																	'SQL Developer':[
 																						' sql ',
-																						' sql\\,',
-																						' sql\\.'
+																						' sql,',
+																						' sql.'
 																					]
 												}
 								},
@@ -160,15 +162,15 @@ skills = {
 												],
 								'specificSkills':{
 																	'.Net Developer':[
-																						' \\.net',
-																						'asp\\.net'
+																						' .net',
+																						'asp.net'
 																						],
 																	'BigData':[			
 																						'big data',
 																						'machine learning',
 																						' ai ',
-																						' ai\\,',
-																						' ai\\.',
+																						' ai,',
+																						' ai.',
 																						'artificial intelligence',
 																						'deep learning',
 																						'nearest neighbour',
@@ -183,8 +185,8 @@ skills = {
 																	'C++ Developer':[	
 																						'c dev',
 																						'in c ',
-																						'using c '
-																						'c\\+\\+'
+																						'using c ',
+																						'c++'
 																						],
 																	'Dev Manager':[		
 																						'dev manager',
@@ -203,8 +205,8 @@ skills = {
 																						],
 																	'Java Developer':[
 																						'java ',
-																						'java\\,',
-																						'java\\.',
+																						'java,',
+																						'java.',
 																						'jdk',
 																						'j2ee',
 																						'j2se'
@@ -273,8 +275,8 @@ skills = {
 																						],
 																	'CIO':[
 																						' cio ',
-																						' cio\\,',
-																						' cio\\.',
+																						' cio,',
+																						' cio.',
 																						'chief information officer'
 																						],
 																	'Configuration Manager':[
@@ -283,14 +285,14 @@ skills = {
 																						],
 																	'COO':[
 																						' coo ',
-																						' coo\\.',
-																						' coo\\,',
+																						' coo.',
+																						' coo,',
 																						'chief operating officer'
 																						],
 																	'CTO':[
 																						' cto',
-																						' coo\\,',
-																						' coo\\.',
+																						' coo,',
+																						' coo.',
 																						'chief technical officer'
 																						],
 																	'Delivery Manager':[
@@ -558,8 +560,8 @@ skills = {
 																						'javascript',
 																						'java script',
 																						' js ',
-																						' js\\.',
-																						' js\\,',
+																						' js.',
+																						' js,',
 																						'angularjs',
 																						'node.js'
 																						],
@@ -577,12 +579,12 @@ skills = {
 																						],
 																	'UI Developer':[
 																						'ui ',
-																						'ui\\,',
-																						'ui\\.',
+																						'ui,',
+																						'ui.',
 																						'user interface',
 																						'gui ',
-																						'gui\\,',
-																						'gui\\.'
+																						'gui,',
+																						'gui.'
 																						],
 																	'Web Designer':[
 																						'web design',
@@ -604,8 +606,8 @@ skills = {
 																						],
 																	'UX Developer':[
 																						' ux ',
-																						' ux\\.',
-																						' ux\\,',
+																						' ux.',
+																						' ux,',
 																						'user experience'
 																						],
 																	'XHTML Developer':[
@@ -747,8 +749,8 @@ skills = {
 																						],
 																	'HR':[
 																						' hr ',
-																						' hr\\.',
-																						' hr\\,',
+																						' hr.',
+																						' hr,',
 																						'human resources',
 																						'payroll',
 																						'hiring'
@@ -806,8 +808,8 @@ skills = {
 								'specificSkills':{
 																	'CICS':[
 																						' cics ',
-																						' cics\\,',
-																						' cics\\.',
+																						' cics,',
+																						' cics.',
 																						'z/os',
 																						'z/vse',
 																						'Customer Information Control System'
@@ -840,11 +842,11 @@ skills = {
 																						],
 																	'iOS Developer':[
 																						' ios ',
-																						' ios\\.',
-																						' ios\\,',
+																						' ios.',
+																						' ios,',
 																						' swift ',
-																						' swift\\.',
-																						' swift\\,'
+																						' swift.',
+																						' swift,'
 																						],
 																	'Mobile Architect':[
 																						'mobile architect',
@@ -863,8 +865,8 @@ skills = {
 								'specificSkills':{
 																	'CFO':[	
 																						' cfo ',
-																						' cfo\\,',
-																						' cfo\\.',
+																						' cfo,',
+																						' cfo.',
 																						'chief financial officer',
 																						'chief finance officer'
 																						],
@@ -1012,6 +1014,10 @@ skills = {
 			'SAP / ERP':{
 								'broadKeyWords':[
 												' sap ',
+												' sap,',
+												' sap.',
+												' erp,',
+												' erp.',
 												' erp ',
 												'enterprise resource plan'
 												],
@@ -1036,8 +1042,8 @@ skills = {
 																						],
 																	'ABAP Developer':[
 																						' abap ',
-																						' abap\\,',
-																						' abap\\.'
+																						' abap,',
+																						' abap.'
 																						],
 																	'Oracle Consultant':[
 																						'oracle consultant'
@@ -1079,8 +1085,8 @@ skills = {
 																						],
 																	'ABAP/4 Programming':[
 																						' abap ',
-																						' abap\\,',
-																						' abap\\.',
+																						' abap,',
+																						' abap.',
 																						'4 programming',
 																						'sap 4'
 																						],
@@ -1127,8 +1133,8 @@ skills = {
 																	'WM (Warehouse Management)':[
 																						'warehouse manage',
 																						' wm ',
-																						' wm\\.',
-																						' wm\\,'
+																						' wm.',
+																						' wm,'
 																						],
 																	'SAP PM (Plant Maintenance)':[
 																						'sap pm',
@@ -1147,8 +1153,8 @@ skills = {
 																						],
 																	'PP - Processes':[
 																						' pp ',
-																						' pp\\,',
-																						' pp\\.',
+																						' pp,',
+																						' pp.',
 																						'pp process'
 																						],
 																	'SAP QM (Quality Management)':[

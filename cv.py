@@ -52,19 +52,20 @@ def get_user_input():
 	text = '\n'.join(inputs)
 	return text
 	
-
 	
+
 #======================================================================
 
 
-	
+
 def find_word_in_string(text,keyword):
 	'''
 	Given a keyword, this function returns the starting 
 	and ending indices of this keyword within a given text string
 	'''
 	occurrences = []
-	for m in re.finditer(keyword, text.casefold()):
+	print(re.escape(keyword))
+	for m in re.finditer(re.escape(keyword), text.casefold()):
          occurrences.append([m.start(),m.end()])
 	return occurrences
 	
