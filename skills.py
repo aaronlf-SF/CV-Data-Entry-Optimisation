@@ -53,10 +53,10 @@ skills = {
 												],
 								'specificSkills':{
 																	'T24':[
-																							'T24'
+																							't24'
 																			],
 																	'Flexcube':[
-																							'Flexcube'
+																							'flexcube'
 																			]
 												}
 								},
@@ -146,7 +146,7 @@ skills = {
 																						' oracle.'
 																						],
 																	'SQL DBA':[
-																						' sql ',
+																						' sql',
 																						' sql,',
 																						' sql.'
 																						],
@@ -555,7 +555,9 @@ skills = {
 																						'css'
 																						],
 																	'FrontEnd Developer':[
-																						'frontend'
+																						'frontend',
+																						'front end',
+																						'front-end'
 																						],
 																	'Graphic Designer':[
 																						'graphic design'

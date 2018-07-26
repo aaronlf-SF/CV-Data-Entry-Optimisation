@@ -104,7 +104,6 @@ def print_with_highlights(text,indices):
 	'''
 	wrapper = textwrap.TextWrapper(width=65,initial_indent=' - ',subsequent_indent='   ')
 	wrapped_text = '\n' + wrapper.fill(text) 
-	
 	new_indices = []
 	for arr in indices:
 		word = text[arr[0]:arr[1]].casefold()
@@ -113,7 +112,8 @@ def print_with_highlights(text,indices):
 			new_indices.append(x)
 	new_indices = [i for n,i in enumerate(new_indices) if i not in new_indices[:n]]
 	new_indices.sort(key = lambda x: x[1])
-	
+	if new_indices == []:
+		print(wrapped_text)
 	normalTextStart = 0
 	for array in new_indices:	
 		print(wrapped_text[normalTextStart:array[0]],end='') #printing normal text
