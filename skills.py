@@ -146,7 +146,7 @@ skills = {
 																						' oracle.'
 																						],
 																	'SQL DBA':[
-																						' sql',
+																						' sql ',
 																						' sql,',
 																						' sql.'
 																						],
@@ -163,7 +163,9 @@ skills = {
 								'specificSkills':{
 																	'.Net Developer':[
 																						' .net',
-																						'asp.net'
+																						'asp.net',
+																						'dotnet',
+																						'dot net'
 																						],
 																	'BigData':[			
 																						'big data',
@@ -196,6 +198,8 @@ skills = {
 																						],
 																	'Development Lead':[
 																						'develop lead',
+																						'development lead',
+																						'lead dev',
 																						'head of development',
 																						'technical lead'
 																						],
@@ -251,8 +255,6 @@ skills = {
 								},
 			'Manager':{
 								'broadKeyWords':[
-												'manager',
-												'director'
 												],
 								'specificSkills':{
 																	'Account Manager':[
@@ -560,6 +562,7 @@ skills = {
 																						'front-end'
 																						],
 																	'Graphic Designer':[
+																						'designer',
 																						'graphic design'
 																						],
 																	'Javascript Developer':[
@@ -593,6 +596,7 @@ skills = {
 																						'gui.'
 																						],
 																	'Web Designer':[
+																						'designer',
 																						'web design',
 																						'designing website',
 																						'website design'
@@ -626,13 +630,14 @@ skills = {
 												],
 								'specificSkills':{
 																	'Application Support Engineer':[
-																						'application support'
+																						'application support',
 																						'application support engineer',
 																						'app support engineer'
 																						],
 																	'Application Support Manager':[
-																						'application support'
-																						'application support manage'
+																						'application support',
+																						'application support manage',
+																						'app support manage'
 																						],
 																	'Desktop Support Engineer':[
 																						'desktop support'
@@ -702,7 +707,7 @@ skills = {
 																						'sap project manage'
 																						],
 																	'Scrum Master':[
-																						'scrum master'
+																						'scrum'
 																					]
 												}
 								},
