@@ -590,10 +590,8 @@ skills = {
 																						'ui ',
 																						'ui,',
 																						'ui.',
-																						'user interface',
-																						'gui ',
-																						'gui,',
-																						'gui.'
+																						'user interface'
+											
 																						],
 																	'Web Designer':[
 																						'designer',

@@ -1,5 +1,6 @@
 import re
 import shutil
+import threading
 
 import colorama
 colorama.init()
@@ -32,23 +33,25 @@ def main():
 def get_user_input():
 	global WINDOW_WIDTH
 	
-	extra_text = '(Note: Press Enter -> Ctrl+Z -> Enter to activate after pasting text)'
-	wrapper = textwrap.TextWrapper(width=WINDOW_WIDTH)
-	wrapped_text = 'Paste CV text:\n' + wrapper.fill(extra_text) + '\n\n'
-	
-	input1 = input(wrapped_text)
+	input1 = input('Paste CV text:\n\n')
 	inputs = [input1]
+
 	while True:
-		try:
-			input1 = input()
-			inputs.append(input1)
-		except EOFError:
+		thread = threading.Thread(target=thread_input,args=(inputs,),daemon=True)
+		thread.start()
+		thread.join(timeout=0.7)
+		if thread.is_alive() == True: #This means the thread has timed out
 			break
 	text = '\n'.join(inputs)
 	return text
 	
-	
 
+def thread_input(inputs):
+	input1 = input()
+	inputs.append(input1) # might not change global inputs array?
+
+	
+	
 #======================================================================
 
 
