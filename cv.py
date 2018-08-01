@@ -1,4 +1,5 @@
 import re
+import shutil
 
 import colorama
 colorama.init()
@@ -7,32 +8,20 @@ import textwrap
 
 from skills import skills
 
+WINDOW_WIDTH = shutil.get_terminal_size().columns
 
-#======================================================================
-
-'''
-main() defined, line 31
-
-get_user_input() defined, line 43
-
-find_word_in_string() defined, line 61
-sentence_finder() defined, line 72
-print_with_highlights() defined, line 101
-
-display_sentences_for_skill() defined, line 119
-
-process_text_and_print_results() defined, line 154
-'''
 
 #======================================================================
 
 
 
 def main():
+	global WINDOW_WIDTH
 	text = get_user_input()
-	print('\n\n----------------------------------------------------------------------',end='')
+	print('\n\n' + ('-' * WINDOW_WIDTH),end='')
 	process_text_and_print_results(text)
-	print('\n\n')
+	print('\n\n\n' + ('-' * WINDOW_WIDTH *2) + '\n')
+	main()
 
 
 
@@ -41,7 +30,13 @@ def main():
 
 
 def get_user_input():
-	input1 = input('Paste text below:\n\n')
+	global WINDOW_WIDTH
+	
+	extra_text = '(Note: Press Enter -> Ctrl+Z -> Enter to activate after pasting text)'
+	wrapper = textwrap.TextWrapper(width=WINDOW_WIDTH)
+	wrapped_text = 'Paste CV text:\n' + wrapper.fill(extra_text) + '\n\n'
+	
+	input1 = input(wrapped_text)
 	inputs = [input1]
 	while True:
 		try:
@@ -102,7 +97,9 @@ def print_with_highlights(text,indices):
 	'''
 	This prints the sentence with the keyword(s) highlighted cyan.
 	'''
-	wrapper = textwrap.TextWrapper(width=65,initial_indent=' - ',subsequent_indent='   ')
+	global WINDOW_WIDTH
+	
+	wrapper = textwrap.TextWrapper(width=WINDOW_WIDTH-5,initial_indent=' - ',subsequent_indent='   ')
 	wrapped_text = '\n' + wrapper.fill(text) 
 	new_indices = []
 	for arr in indices:
@@ -129,6 +126,7 @@ def print_with_highlights(text,indices):
 
 
 def display_sentences_for_skill(text,skill,name_of_skill,toPrintBroadSkill,skillType): #skill variable is simply a list of the keywords 
+	global WINDOW_WIDTH
 	
 	sentences = []
 	skill_occurrence_count = 0
@@ -144,7 +142,7 @@ def display_sentences_for_skill(text,skill,name_of_skill,toPrintBroadSkill,skill
 				
 	if skill_occurrence_count > 0:
 		if toPrintBroadSkill[0] == True:
-			print('\n\n\n\n\n\x1b[1;33;40m' + ('~~~~~~~~~  '+ toPrintBroadSkill[1] + '  ~~~~~~~~~').center(70) + '\x1b[0m') #YELLOW OUTPUT
+			print('\n\n\n\n\n\x1b[1;33;40m' + ('~~~~~~~~~  '+ toPrintBroadSkill[1] + '  ~~~~~~~~~').center(WINDOW_WIDTH) + '\x1b[0m') #YELLOW OUTPUT
 		if skillType == 'specific':
 			print('\n\n\x1b[1;32;40m' + ' ' + name_of_skill.upper() + ' - NUMBER OF OCCURRENCES: ' + str(skill_occurrence_count) + '\x1b[0m',end='') #GREEN OUTPUT
 		elif skillType == 'broad':
@@ -190,7 +188,7 @@ def process_text_and_print_results(text):
 				toPrintBroadSkill[0] = False
 		
 	
-	print('\n\n\n\n----------------------------------------------------------------------'+'\n\n\n'+'POSSIBLE SKILLS FOUND: \n')
+	print('\n\n\n\n' + ('-' * WINDOW_WIDTH) +'\n\n\n'+'POSSIBLE SKILLS FOUND: \n')
 	
 	for item in listToPrint:
 		if item['broad'] == True:
