@@ -1,8 +1,8 @@
 # Caliber Data Entry Optimisation
 
-#### Current version: v1.1.2
+#### Current version: v2.1.1
 
-This script is designed to increase productivity when filling out skills from a CV onto the Caliber database. By taking the raw text from the CV, this script finds relevant keywords and matches potential skills. To help counteract false positives, contextual sentences in which keyword(s) are contained are provided to the user, as well as the occurrence count of keywords found for each skill.
+This program is designed to increase productivity when filling out skills from a CV onto the Caliber database. By taking the raw text from the CV, this program finds relevant keywords and matches potential skills. To help counteract false positives, contextual sentences in which keyword(s) are contained are provided to the user, as well as the occurrence count of keywords found for each skill.
 
 This is presented in an easy-to-read, coloured format designed to maximise productivity - the order of skills printed to the console is the same as the order on Caliber's interface. A summary section is given at the bottom showing all caught skills with the number of keyword occurrences for each, so before diving into the contextual sentences the user can already has an idea of what skills the candidate has.
 
