@@ -293,8 +293,8 @@ skills = {
 																						],
 																	'CTO':[
 																						' cto',
-																						' coo,',
-																						' coo.',
+																						' cto,',
+																						' cto.',
 																						'chief technical officer'
 																						],
 																	'Delivery Manager':[
@@ -335,7 +335,7 @@ skills = {
 																						'operations manage'
 																						],
 																	'Product Manager':[
-																						'product manage'
+																						#took this out as it is caught in project management as well
 																						],
 																	'Production Support Manager':[
 																						'production support manage'
@@ -803,7 +803,7 @@ skills = {
 																						'training manage',
 																						],
 																	'Product Manager':[
-																						'product manage'
+																						#took this out as it is caught in project management as well
 																						],
 																	'Spec Vacancy':[
 																					]

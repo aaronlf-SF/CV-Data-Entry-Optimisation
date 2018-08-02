@@ -39,7 +39,7 @@ def get_user_input():
 	while True:
 		thread = threading.Thread(target=thread_input,args=(inputs,),daemon=True)
 		thread.start()
-		thread.join(timeout=0.7)
+		thread.join(timeout=0.1)
 		if thread.is_alive() == True: #This means the thread has timed out
 			break
 	text = '\n'.join(inputs)
