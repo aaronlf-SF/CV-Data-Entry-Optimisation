@@ -276,9 +276,9 @@ skills = {
 																						'change manage'
 																						],
 																	'CIO':[
-																						' cio ',
-																						' cio,',
-																						' cio.',
+																						'cio ',
+																						'cio,',
+																						'cio.',
 																						'chief information officer'
 																						],
 																	'Configuration Manager':[
@@ -286,15 +286,15 @@ skills = {
 																						'config manage'
 																						],
 																	'COO':[
-																						' coo ',
-																						' coo.',
-																						' coo,',
+																						'coo ',
+																						'coo.',
+																						'coo,',
 																						'chief operating officer'
 																						],
 																	'CTO':[
-																						' cto',
-																						' cto,',
-																						' cto.',
+																						'cto',
+																						'cto,',
+																						'cto.',
 																						'chief technical officer'
 																						],
 																	'Delivery Manager':[
@@ -313,7 +313,7 @@ skills = {
 																						],
 																	'General Manager':[
 																						'general manage',
-																						' gm ' 
+																						'gm ' 
 																						],
 																	'HR Manager / Director':[
 																						'hr manager',
@@ -420,7 +420,7 @@ skills = {
 																						'unix network',
 																						'gnu network',
 																						'linux and windows admin',
-																						'unix and windows admin'
+																						'unix and windows admin',
 																						'gnu sys admin',
 																						'gnu system admin',
 																						'gnu systems admin',
@@ -440,14 +440,13 @@ skills = {
 																						'systems analyst'
 																						],
 																	'System Architect':[
-																						'system architect'
+																						'system architect',
+																						'systems architect'
 																						],
 																	'Systems Administrator':[
 																						'sys admin',
-																						'system administrator',
-																						'system admin'
-																						'systems admin',
-																						'systems administrator'
+																						'system admin',
+																						'systems admin'
 																						],
 																	'Virtualization Engineer':[
 																						'virtualization',
