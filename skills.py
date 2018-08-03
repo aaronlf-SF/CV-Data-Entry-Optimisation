@@ -292,7 +292,7 @@ skills = {
 																						'chief operating officer'
 																						],
 																	'CTO':[
-																						'cto',
+																						' cto',
 																						'cto,',
 																						'cto.',
 																						'chief technical officer'
@@ -589,6 +589,7 @@ skills = {
 																						'ui ',
 																						'ui,',
 																						'ui.',
+																						'gui ',
 																						'user interface'
 											
 																						],

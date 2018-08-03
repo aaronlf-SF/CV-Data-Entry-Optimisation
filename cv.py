@@ -61,9 +61,17 @@ def find_word_in_string(text,keyword):
 	Given a keyword, this function returns the starting 
 	and ending indices of this keyword within a given text string
 	'''
+	escape = False
 	occurrences = []
-	for m in re.finditer(re.escape(keyword), text.casefold()):
-         occurrences.append([m.start(),m.end()])
+	for char in keyword:
+		if char in ['+','.']:
+			escape = True
+	if escape == True:
+		for m in re.finditer(re.escape(keyword), text.casefold()):
+			 occurrences.append([m.start(),m.end()])
+	else:
+		for m in re.finditer(keyword, text.casefold()):
+			 occurrences.append([m.start(),m.end()])
 	return occurrences
 	
 
@@ -114,6 +122,18 @@ def print_with_highlights(text,indices):
 	new_indices.sort(key = lambda x: x[1])
 	if new_indices == []:
 		print(wrapped_text)
+	else: # This else case determines if a keyword is contained within a larger keyword and removes the smaller one if so
+		for i in new_indices:
+			other_indices = [other_index for other_index in new_indices if other_index != i]
+			for j in other_indices:
+				if (j[0] == i[0]) or (j[1] == i[1]):
+					if (i[1]-i[0]) < (j[1]-j[0]):
+						arr_to_remove = i
+					else:
+						arr_to_remove = j
+					new_indices.remove(arr_to_remove)
+					break
+		
 	normalTextStart = 0
 	for array in new_indices:	
 		print(wrapped_text[normalTextStart:array[0]],end='') #printing normal text
