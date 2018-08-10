@@ -182,7 +182,8 @@ skills = {
 																						'build engineer'
 																						],
 																	'C# Developer':[	
-																						'c#'
+																						'c#',
+																						'c #'
 																						],
 																	'C++ Developer':[	
 																						'c dev',
@@ -205,7 +206,8 @@ skills = {
 																						],
 																	'Director of Software Engineering':[
 																						'software engineering director',
-																						'director of software engineering'
+																						'director of software engineering',
+																						'director of software development'
 																						],
 																	'Java Developer':[
 																						'java ',
@@ -293,8 +295,8 @@ skills = {
 																						],
 																	'CTO':[
 																						' cto',
-																						'cto,',
-																						'cto.',
+																						'cto, ',
+																						'cto. ',
 																						'chief technical officer'
 																						],
 																	'Delivery Manager':[
@@ -354,7 +356,8 @@ skills = {
 																						],
 																	'Sales Manager':[
 																						'sales manage',
-																						'manager of sales'
+																						'manager of sales',
+																						'business development manager'
 																						],
 																	'Service Delivery Manager':[	
 																						'service delivery manage'
@@ -817,9 +820,7 @@ skills = {
 												],
 								'specificSkills':{
 																	'CICS':[
-																						' cics ',
-																						' cics,',
-																						' cics.',
+																						'cics',
 																						'z/os',
 																						'z/vse',
 																						'Customer Information Control System'
@@ -1011,7 +1012,8 @@ skills = {
 																						'gdpr officer',
 																						'head of data protection',
 																						'data protection head',
-																						'head of privacy'
+																						'head of privacy',
+																						'dpo'
 																						],
 																	'Project Manager':[
 																						'gdpr project manage',
