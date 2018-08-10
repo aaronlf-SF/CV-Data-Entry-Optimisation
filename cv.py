@@ -48,7 +48,7 @@ def get_user_input():
 
 def thread_input(inputs):
 	input1 = input()
-	inputs.append(input1) # might not change global inputs array?
+	inputs.append(input1)
 
 	
 	
