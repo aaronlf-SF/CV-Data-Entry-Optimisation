@@ -1,6 +1,6 @@
 # Caliber Data Entry Optimisation
 
-#### Current version: v2.1.3
+#### Current version: v2.1.3 
 
 This program is designed to increase productivity when filling out skills from a CV onto the Caliber database. By taking the raw text from the CV, this program finds relevant keywords and matches potential skills. To help counteract false positives, contextual sentences in which keyword(s) are contained are provided to the user, as well as the occurrence count of keywords found for each skill.
 
